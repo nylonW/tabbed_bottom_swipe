@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cT3-OX-jpo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="pjn-s9-G8O">
+            <objects>
+                <viewController id="7Mh-AF-E3Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dh1-5Z-sML">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yFH-Ce-a6K">
+                                <rect key="frame" x="0.0" y="46.5" width="414" height="764.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xYt-nI-BYP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xYt-nI-BYP" firstAttribute="trailing" secondItem="yFH-Ce-a6K" secondAttribute="trailing" id="2og-Bf-E72"/>
+                            <constraint firstItem="xYt-nI-BYP" firstAttribute="bottom" secondItem="yFH-Ce-a6K" secondAttribute="bottom" id="9G2-5L-jHM"/>
+                            <constraint firstItem="yFH-Ce-a6K" firstAttribute="leading" secondItem="xYt-nI-BYP" secondAttribute="leading" id="MMM-hl-FU9"/>
+                            <constraint firstItem="yFH-Ce-a6K" firstAttribute="top" secondItem="xYt-nI-BYP" secondAttribute="top" id="ixT-Ta-mO3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="square.and.arrow.down.fill" catalog="system" id="6Q9-PH-9Nk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g27-1S-l6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="458"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="07l-bl-GhB">
+            <objects>
+                <viewController id="Bru-Wt-Tjo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uvM-fr-fqX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.append.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-BP-Mvf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sRs-rI-fbh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sRs-rI-fbh" firstAttribute="bottom" secondItem="eYa-BP-Mvf" secondAttribute="bottom" id="0u3-IM-pYj"/>
+                            <constraint firstItem="sRs-rI-fbh" firstAttribute="trailing" secondItem="eYa-BP-Mvf" secondAttribute="trailing" id="UAf-Pi-bol"/>
+                            <constraint firstItem="eYa-BP-Mvf" firstAttribute="leading" secondItem="sRs-rI-fbh" secondAttribute="leading" id="daT-Yu-dFn"/>
+                            <constraint firstItem="eYa-BP-Mvf" firstAttribute="top" secondItem="sRs-rI-fbh" secondAttribute="top" id="gQz-l0-FIZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="square.and.arrow.down" catalog="system" id="Zjp-IB-w3R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXm-eJ-kd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-285"/>
+        </scene>
+        <!--Tabbed Bottom Navigation Bar View Controller-->
+        <scene sceneID="sYf-FF-92Z">
+            <objects>
+                <tabBarController id="cT3-OX-jpo" customClass="TabbedBottomNavigationBarViewController" customModule="TabbedBottomNavigationBar" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7pJ-D8-2jS"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vi2-Qr-uXl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hapticEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hapticFeedback" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="Bru-Wt-Tjo" kind="relationship" relationship="viewControllers" id="U56-hy-o1p"/>
+                        <segue destination="7Mh-AF-E3Q" kind="relationship" relationship="viewControllers" id="WgC-VO-YmD"/>
+                        <segue destination="0xa-CT-D97" kind="relationship" relationship="viewControllers" id="3ms-JD-9GJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Olj-bw-lQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="156"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Y3W-wk-2tL">
+            <objects>
+                <viewController id="0xa-CT-D97" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D2J-ay-wot">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HzV-xn-bYH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="767.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="whd-Yp-RGl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HzV-xn-bYH" firstAttribute="leading" secondItem="whd-Yp-RGl" secondAttribute="leading" id="AtY-x3-WVS"/>
+                            <constraint firstItem="HzV-xn-bYH" firstAttribute="top" secondItem="whd-Yp-RGl" secondAttribute="top" id="E0n-j5-arl"/>
+                            <constraint firstItem="whd-Yp-RGl" firstAttribute="bottom" secondItem="HzV-xn-bYH" secondAttribute="bottom" id="JJJ-87-YlV"/>
+                            <constraint firstItem="whd-Yp-RGl" firstAttribute="trailing" secondItem="HzV-xn-bYH" secondAttribute="trailing" id="Lwj-Xn-cKR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="square.and.arrow.down" catalog="system" id="9ay-S7-Sns"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdN-ip-jNf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1103" y="405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.append.fill" catalog="system" width="115" height="128"/>
+        <image name="pencil.slash" catalog="system" width="128" height="113"/>
+        <image name="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" width="128" height="92"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

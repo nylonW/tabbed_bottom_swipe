@@ -10,6 +10,7 @@
 		85EEC9602562EAD400F07D79 /* TabbedBottomNavigationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EEC9562562EAD400F07D79 /* TabbedBottomNavigationBar.framework */; };
 		85EEC9652562EAD400F07D79 /* TabbedBottomNavigationBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EEC9642562EAD400F07D79 /* TabbedBottomNavigationBarTests.swift */; };
 		85EEC9672562EAD400F07D79 /* TabbedBottomNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 85EEC9592562EAD400F07D79 /* TabbedBottomNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85EEC9C72562EBF600F07D79 /* TabbedBottomNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EEC9C62562EBF600F07D79 /* TabbedBottomNavigationBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		85EEC95F2562EAD400F07D79 /* TabbedBottomNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedBottomNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EEC9642562EAD400F07D79 /* TabbedBottomNavigationBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedBottomNavigationBarTests.swift; sourceTree = "<group>"; };
 		85EEC9662562EAD400F07D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85EEC9C62562EBF600F07D79 /* TabbedBottomNavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedBottomNavigationBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				85EEC9592562EAD400F07D79 /* TabbedBottomNavigationBar.h */,
 				85EEC95A2562EAD400F07D79 /* Info.plist */,
+				85EEC9C62562EBF600F07D79 /* TabbedBottomNavigationBarViewController.swift */,
 			);
 			path = TabbedBottomNavigationBar;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					85EEC9552562EAD400F07D79 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					85EEC95E2562EAD400F07D79 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EEC9C72562EBF600F07D79 /* TabbedBottomNavigationBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		85EEC96B2562EAD400F07D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4RSAW4A69;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nylon.TabbedBottomNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		85EEC96C2562EAD400F07D79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A4RSAW4A69;
@@ -389,6 +397,7 @@
 		85EEC96E2562EAD400F07D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4RSAW4A69;
 				INFOPLIST_FILE = TabbedBottomNavigationBarTests/Info.plist;
@@ -407,6 +416,7 @@
 		85EEC96F2562EAD400F07D79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4RSAW4A69;
 				INFOPLIST_FILE = TabbedBottomNavigationBarTests/Info.plist;
